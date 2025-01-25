@@ -31,18 +31,23 @@ public class CarController : MonoBehaviour
 
         turnInput =Input.GetAxis("Horizontal");
 
-        if(Input.GetAxis("Vertical") != 0)
-        {
-            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f,turnInput * turnStrength * Time.deltaTime * MathF.Sign(speedInput) * (theRB.velocity.magnitude / maxSpeed)  ,0f));
-        }
+        // if(Input.GetAxis("Vertical") != 0)
+        // {
+        //     transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f,turnInput * turnStrength * Time.deltaTime * MathF.Sign(speedInput) * (theRB.linearVelocity.magnitude / maxSpeed)  ,0f));
+        // }
 
 
-        transform.position = theRB.position;
+        //transform.position = theRB.position;
     }
 
     private void FixedUpdate()
     {
         theRB.AddForce(transform.forward * speedInput * 500f);
+        transform.position = theRB.position;
 
+     if(Input.GetAxis("Vertical") != 0)
+        {
+            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f,turnInput * turnStrength * Time.deltaTime * MathF.Sign(speedInput) * (theRB.linearVelocity.magnitude / maxSpeed)  ,0f));
+        }
     }
 }
