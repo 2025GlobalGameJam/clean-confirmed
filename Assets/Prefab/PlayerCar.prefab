@@ -5057,6 +5057,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   groundRayLength: 0.75
+  idleEngineSound: {fileID: 8300000, guid: 02970c28c1057ab43bb5b825462dbf80, type: 3}
+  dashEngineSound: {fileID: 8300000, guid: 0f7447a871aa2224284fe3ac73284cc5, type: 3}
+  driftSound: {fileID: 8300000, guid: 08ca8e5b06db3e047b51f20732dd6276, type: 3}
+  crashSound: {fileID: 8300000, guid: 79645f4ccb02f694581cdc4be31ba52c, type: 3}
+  bubblePopSound: {fileID: 8300000, guid: dc254c1676389e24789f3bb5f667ae7a, type: 3}
 --- !u!64 &7196119134768507671
 MeshCollider:
   m_ObjectHideFlags: 0
