@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class GameTimer : MonoBehaviour
 {
     public float gameTime = 30f;
     private bool isGameOver = false;
@@ -33,8 +33,8 @@ public class PlayerController : MonoBehaviour
         }
 
         // Disable all moving scripts
-        PlayerController[] players = Object.FindObjectsByType<PlayerController>(FindObjectsSortMode.None);
-        foreach (PlayerController player in players)
+        GameTimer[] players = Object.FindObjectsByType<GameTimer>(FindObjectsSortMode.None);
+        foreach (GameTimer player in players)
         {
             player.enabled = false;
         }
