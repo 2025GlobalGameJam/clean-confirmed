@@ -31,13 +31,6 @@ public class CarController : MonoBehaviour
 
         turnInput =Input.GetAxis("Horizontal");
 
-        // if(Input.GetAxis("Vertical") != 0)
-        // {
-        //     transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f,turnInput * turnStrength * Time.deltaTime * MathF.Sign(speedInput) * (theRB.linearVelocity.magnitude / maxSpeed)  ,0f));
-        // }
-
-
-        //transform.position = theRB.position;
     }
 
     private void FixedUpdate()
@@ -50,21 +43,5 @@ public class CarController : MonoBehaviour
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f,turnInput * turnStrength * Time.deltaTime * MathF.Sign(speedInput) * (theRB.linearVelocity.magnitude / maxSpeed)  ,0f));
         }
     }
-    //Bubble Code?
-    // public ParticleSystem popEffect;
-
-    // void OnCollisionEnter(Collision collision)
-    // {
-    //     if (collision.gameObject.CompareTag("Bubble"))
-    //     {
-    //         PopBubble();
-    //     }
-    // }
-
-    // void PopBubble()
-    // {
-    //     Instantiate(popEffect, transform.position, Quaternion.identity);
-    //     Destroy(gameObject);
-    // }
-
+    
 }

@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
     public int scoreToGive = 1;
-    public int clicksToPop = 5;
+    public int clicksToPop = 3;
     public float scaleIncreasePerClick = 0.1f;
     public ScoreManager scoreManager;
 
