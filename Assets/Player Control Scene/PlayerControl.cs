@@ -51,8 +51,8 @@ public class PlayerControl : MonoBehaviour
     void rotatePlayer()
     {
         Vector3 eulerAngles = cameraTransform.eulerAngles;
-        eulerAngles.x = 0f;
-        eulerAngles.z = 0f;
+        eulerAngles.x = 0f; 
+        eulerAngles.z = 0f; 
 
         player.rotation = Quaternion.Euler(eulerAngles);
     }
