@@ -82,7 +82,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1004052442396088342}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1104,8 +1104,6 @@ MonoBehaviour:
   moveSpeed: 10
   cameraTransform: {fileID: 3656076298578284764}
   player: {fileID: 6842024190019254350}
-  angeloIsMad: {fileID: 5998885958572585545}
-  aaaaaaah: {fileID: 7978377860332563326}
 --- !u!4 &6842024190019254350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0edc8c95bd839ba41a1ed4b9b871c828, type: 3}
