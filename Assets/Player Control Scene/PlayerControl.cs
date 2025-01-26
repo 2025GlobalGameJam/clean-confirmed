@@ -28,7 +28,6 @@ public class PlayerControl : MonoBehaviour
     void movePlayer()
     {
         Vector2 direction = _moveAction.ReadValue<Vector2>();
-        transform.position += new Vector3(direction.x, 0, direction.y) * moveSpeed * Time.deltaTime;
 
         // Calculate the camera's forward and right vectors
         Vector3 forward = cameraTransform.forward;
