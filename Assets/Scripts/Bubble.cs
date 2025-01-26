@@ -1,58 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
-    public float bubbleLifeTime = 10f;
+    public int scoreToGive = 1;
+    public int clicksToPop = 5;
+    public float scaleIncreasePerClick = 0.1f;
+    public ScoreManager scoreManager;
 
-    private Rigidbody targetRigidbody;
-    private Collider targetCollider;
-    private float timer = 0f;
 
-    public void Initialize(Transform target)
+    void OnMouseDown()
     {
-        targetRigidbody = target.GetComponent<Rigidbody>();
-        targetCollider = target.GetComponent<Collider>();
+        clicksToPop -= 1;
+        transform.localScale += Vector3.one * scaleIncreasePerClick;
 
-        if (targetRigidbody != null)
+        if (clicksToPop == 0)
         {
-            targetRigidbody.isKinematic = true;
-        }
-        if (targetCollider != null)
-        {
-            targetCollider.enabled = false;
-        }
-
-    }
-
-    private void Update()
-    {
-        // Increment the timer
-        timer += Time.deltaTime;
-
-        // Check if the timer has reached the bubble's lifetime
-        if (timer >= bubbleLifeTime)
-        {
-            PopBubble(transform.parent);
+            scoreManager.IncreaseScore(scoreToGive);
+            Destroy(gameObject);
         }
     }
-
-    void PopBubble(Transform target)
-    {
-        if (targetRigidbody != null)
-        {
-            targetRigidbody.isKinematic = false;
-        }
-        if (targetCollider != null)
-        {
-            targetCollider.enabled = true;
-        }
-
-        target.SetParent(null);
-        Destroy(gameObject);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        PopBubble(transform.parent);
-    }
+    
 }
