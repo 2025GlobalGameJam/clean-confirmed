@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CarController : MonoBehaviour
 {
@@ -19,32 +20,34 @@ public class CarController : MonoBehaviour
    private float dragOnGround;
 
 
-
+    InputActionMap map;
+    InputAction move;
 
     void Start()
     {
         theRB.transform.parent = null;
 
         dragOnGround = theRB.linearDamping;
-
+        map = GetComponent<PlayerInput>().currentActionMap;
+        move = map.FindAction("Move");
     }
 
     void Update()
     {
         speedInput = 0f;
-        if (Input.GetAxis ("Vertical") > 0)
+        if (move.ReadValue<Vector2>().y > 0)
         {
-            speedInput = Input.GetAxis("Vertical") * forwardAccel;
+            speedInput = move.ReadValue<Vector2>().y * forwardAccel;
         }
-        else if (Input.GetAxis("Vertical") < 0)
+        else if (move.ReadValue<Vector2>().y < 0)
         {
-            speedInput = Input.GetAxis("Vertical") * reverseAccel;
+            speedInput = move.ReadValue<Vector2>().y * reverseAccel;
 
         }
 
-        turnInput =Input.GetAxis("Horizontal");
+        turnInput = move.ReadValue<Vector2>().x;
         
-     if(Input.GetAxis("Vertical") != 0)
+     if(move.ReadValue<Vector2>().y != 0)
         {
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f,turnInput * turnStrength * Time.deltaTime * MathF.Sign(speedInput) * (theRB.linearVelocity.magnitude / maxSpeed), 0f));
         }
