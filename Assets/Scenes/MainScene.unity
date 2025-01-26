@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 4e4980336892d9546bf0bf0e3f30c265, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &13845263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14502,7 +14502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &447236829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16999,7 +16999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &527960655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18717,7 +18717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &578502877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23440,7 +23440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &706464732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29168,7 +29168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &888394281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31074,7 +31074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &967427892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35939,7 +35939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &1121247875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55506,7 +55506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &1658979563
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57404,13 +57404,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704015169}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.35046896, y: 0, z: 0, w: 0.9365744}
+  m_LocalPosition: {x: 116.8, y: 42.6, z: -7.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 41.032, y: 0, z: 0}
 --- !u!65 &1704015175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57819,7 +57819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &1713611956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58974,7 +58974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &1746911277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60725,7 +60725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &1803984024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68854,7 +68854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &2027333974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70773,7 +70773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &2061317067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71994,7 +71994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2610530287456040872, guid: f9a0f8c3fb0ed0e4295942a9cbc2a182, type: 3}
-  spawnCount: 10
+  spawnCount: 5
 --- !u!65 &2097460246
 BoxCollider:
   m_ObjectHideFlags: 0
