@@ -28,24 +28,23 @@ public class PlayerControl : MonoBehaviour
     void movePlayer()
     {
         Vector2 direction = _moveAction.ReadValue<Vector2>();
-        transform.position += new Vector3(direction.x, 0, direction.y) * moveSpeed * Time.deltaTime;
 
-        // Calculate the camera's forward and right vectors
+        // Get the camera's forward and right vectors in the local space (XZ plane)
         Vector3 forward = cameraTransform.forward;
         Vector3 right = cameraTransform.right;
 
-        // We only want horizontal movement along the XZ plane, so zero out the Y components
+        // We want movement to only happen in the XZ plane, so we zero out the Y components
         forward.y = 0f;
         right.y = 0f;
 
-        // Normalize the vectors to avoid accelerated diagonal movement
+        // Normalize to prevent diagonal movement from being faster
         forward.Normalize();
         right.Normalize();
 
         // Calculate the movement direction based on camera orientation
         Vector3 movement = (forward * direction.y + right * direction.x) * moveSpeed * Time.deltaTime;
 
-        // Apply the movement
+        // Apply movement
         transform.position += movement;
     }
 
