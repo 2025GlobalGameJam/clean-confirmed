@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,18 +12,24 @@ public class PlayerControl : MonoBehaviour
     public Transform cameraTransform;
     public Transform player;
 
+    SpawnAround _spawnRef;
+    
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
 
         _playerInput = GetComponent<PlayerInput>();
         _moveAction = _playerInput.actions.FindAction("Move");
+        _spawnRef = FindFirstObjectByType<SpawnAround>();
+        gameObject.transform.position = _spawnRef.Spawns[_playerInput.user.id].transform.position;
     }
 
     void Update()
     {
         movePlayer();
         rotatePlayer();
+        
     }
 
     void movePlayer()

@@ -80,8 +80,8 @@ Canvas:
   m_GameObject: {fileID: 777693715639568810}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1004052442396088342}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -272,8 +272,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7978377860332563326}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08130819, y: -0.026235932, z: 0.0021410293, w: 0.99634135}
-  m_LocalPosition: {x: 1.16, y: 1.4765949, z: -4.7077713}
+  m_LocalRotation: {x: -0.06309221, y: -0.28921202, z: -0.019106982, w: 0.95499253}
+  m_LocalPosition: {x: 3.1492825, y: 0.11727524, z: -3.0981903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -356,7 +356,7 @@ MonoBehaviour:
     SplineCurvature: 0.51
   RecenteringTarget: 2
   HorizontalAxis:
-    Value: 0
+    Value: -40.390427
     Center: 0
     Range: {x: -180, y: 180}
     Wrap: 1
@@ -366,7 +366,7 @@ MonoBehaviour:
       Time: 2
     Restrictions: 0
   VerticalAxis:
-    Value: 12
+    Value: -8.803498
     Center: 17.5
     Range: {x: -10, y: 45}
     Wrap: 0
@@ -469,7 +469,7 @@ MonoBehaviour:
         LegacyInput: Mouse Y
         LegacyGain: -200
         CancelDeltaTime: 0
-      InputValue: 0
+      InputValue: -0
       Driver:
         AccelTime: 0.2
         DecelTime: 0.2
@@ -547,8 +547,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8373386486191010545}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08130819, y: -0.026235934, z: 0.0021410296, w: 0.99634135}
-  m_LocalPosition: {x: 1.16, y: 1.4765949, z: -4.7077713}
+  m_LocalRotation: {x: -0.0630922, y: -0.28921202, z: -0.01910698, w: 0.95499253}
+  m_LocalPosition: {x: 3.1492825, y: 0.11727524, z: -3.0981903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1088,7 +1088,7 @@ MonoBehaviour:
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1004052442396088342}
 --- !u!114 &2388388677073543013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,6 +1104,8 @@ MonoBehaviour:
   moveSpeed: 10
   cameraTransform: {fileID: 3656076298578284764}
   player: {fileID: 6842024190019254350}
+  angeloIsMad: {fileID: 5998885958572585545}
+  aaaaaaah: {fileID: 7978377860332563326}
 --- !u!4 &6842024190019254350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0edc8c95bd839ba41a1ed4b9b871c828, type: 3}
