@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bubble : MonoBehaviour
+public class BubbleScoree : MonoBehaviour
 {
     public float bubbleLifeTime = 3f;
     private GameObject capturedObject;

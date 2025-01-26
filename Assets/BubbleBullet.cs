@@ -27,6 +27,6 @@ public class BubbleBullet : MonoBehaviour
     void CreateBubble(GameObject target)
     {
         GameObject bubble = Instantiate(bubblePrefab, target.transform.position, Quaternion.identity);
-        bubble.GetComponent<Bubble>().CaptureTarget(target);
+        bubble.GetComponent<BubbleScoree>().CaptureTarget(target);
     }
 }

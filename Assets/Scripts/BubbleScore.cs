@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bubble : MonoBehaviour
+public class BubbleScore : MonoBehaviour
 {
     public int scoreToGive = 1;
     public int clicksToPop = 3;
