@@ -50,7 +50,7 @@ public class CarController : MonoBehaviour
         }
 
         //control particle emissions
-        emissionRate = Mathf.MoveTowards(emissionRate, 0f, emissionFadeSpeed * Time.deltaTime);
+        emissionRate = Mathf.MoveTowards(emissionRate, 25f, emissionFadeSpeed * Time.deltaTime);
 
         if (grounded)
         {
