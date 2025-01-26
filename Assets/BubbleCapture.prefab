@@ -121,4 +121,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6800728f7cf49148ba9900ec64bc559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubbleLifeTime: 2
+  bubbleLifeTime: 45

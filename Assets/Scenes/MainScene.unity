@@ -43792,6 +43792,14 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3281055542207569545, guid: 42eaf29f62dc32642b3c71fb496fa273, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281055542207569545, guid: 42eaf29f62dc32642b3c71fb496fa273, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3656076298578284764, guid: 42eaf29f62dc32642b3c71fb496fa273, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.1492825
@@ -54302,8 +54310,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 500, y: 0.93667984, z: 500}
-  m_Center: {x: 23.321754, y: -8.268471, z: 0}
+  m_Size: {x: 350, y: 0.93667984, z: 350}
+  m_Center: {x: 118.64, y: -8.268471, z: 117.64}
 --- !u!1001 &1460788000
 PrefabInstance:
   m_ObjectHideFlags: 0
