@@ -1,10 +1,13 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameTimer : MonoBehaviour
 {
-    public float gameTime = 30f;
-    private bool isGameOver = false;
+    public float gameTime = 5f;
+    public TMP_Text TimerText;
+    public bool isTimeOut = false;
 
     void Start()
     {
@@ -14,13 +17,32 @@ public class GameTimer : MonoBehaviour
     IEnumerator StartTimer()
     {
         yield return new WaitForSeconds(gameTime);
-        EndGame();
+    }
+
+    private void Update()
+    {
+        if (gameTime > 0)
+        {
+            gameTime -= Time.deltaTime;
+            UpdateTimer(gameTime + 2);
+        }
+        else
+        {
+            EndGame();
+        }
+    }
+
+    void UpdateTimer(float currentTime)
+    {
+        currentTime -= 1.0f;
+
+        TimerText.text = string.Format("{0:00}:{1:00}", (int)currentTime / 60, (int)currentTime % 60);
     }
 
     void EndGame()
     {
-        isGameOver = true;
-        Debug.Log("Player failed to escape within the time limit!");
+        isTimeOut = true;
+        Debug.Log("Time Over!");
 
         // Logic to stop players
         // Stop all Rigidbodies
