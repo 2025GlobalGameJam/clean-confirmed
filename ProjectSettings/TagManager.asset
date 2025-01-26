@@ -11,15 +11,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
-  - 
+  - TruckDriver
+  - TruckBox
   - 
   - 
   - Bubble
-  - Floor
+  - 
   - 
   - 
   - 
