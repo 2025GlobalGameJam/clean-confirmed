@@ -7,9 +7,8 @@ public class Gun : MonoBehaviour
     InputAction _shootAction;
 
 
-    public Transform bubbleSpawnPoint;
+    public Transform bubbleShoot;
     public GameObject bubblePrefab;
-    public float bubbleSpeed = 10;
     // Update is called once per
     // 
     private void Start()
@@ -21,8 +20,7 @@ public class Gun : MonoBehaviour
     {
         if (_shootAction.WasPressedThisFrame())
         {
-            var bubble = Instantiate(bubblePrefab, bubbleSpawnPoint.position, bubbleSpawnPoint.rotation);
-            bubble.GetComponent<Rigidbody>().linearVelocity = bubbleSpawnPoint.forward * bubbleSpeed;
+            Instantiate(bubblePrefab, bubbleShoot.position, bubbleShoot.rotation);
         }
     }
 }
