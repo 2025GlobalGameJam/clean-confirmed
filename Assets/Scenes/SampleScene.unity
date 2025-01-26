@@ -180,7 +180,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 60
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -206,13 +206,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11971143, y: 0.0000000036984973, z: -4.4595955e-10, w: 0.99280876}
-  m_LocalPosition: {x: -0, y: 2.85, z: -5.76}
+  m_LocalRotation: {x: 0.27110645, y: 0.0000000035857726, z: -0.0000000010099496, w: 0.96254945}
+  m_LocalPosition: {x: -0, y: 6, z: -4.86}
   m_LocalScale: {x: 0.45454547, y: 0.45454547, z: 0.45454547}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1738122611}
-  m_LocalEulerAnglesHint: {x: 13.751, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.46, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +274,7 @@ MonoBehaviour:
   IgnoreTimeScale: 0
   WorldUpOverride: {fileID: 0}
   ChannelMask: -1
-  UpdateMethod: 2
+  UpdateMethod: 0
   BlendUpdateMethod: 0
   LensModeOverride:
     Enabled: 0
@@ -603,7 +603,7 @@ Transform:
   m_GameObject: {fileID: 1036443685}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.91, y: 0.97, z: 8}
+  m_LocalPosition: {x: -0.05, y: 0.97, z: 5.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5539,7 +5539,6 @@ MonoBehaviour:
   forwardAccel: 15
   reverseAccel: 5
   turnStrength: 90
-  popEffect: {fileID: 0}
 --- !u!64 &1738122613
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5685,7 +5684,7 @@ GameObject:
   - component: {fileID: 1806597220}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: ExtraCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5749,7 +5748,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806597219}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -5802,7 +5801,7 @@ Transform:
   m_GameObject: {fileID: 1806597219}
   serializedVersion: 2
   m_LocalRotation: {x: 0.1452132, y: 0.0000000036858, z: -5.409608e-10, w: 0.9894004}
-  m_LocalPosition: {x: 0, y: 5, z: -13.01}
+  m_LocalPosition: {x: -0, y: 7.92, z: -22.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5819,8 +5818,8 @@ GameObject:
   - component: {fileID: 2007600384}
   - component: {fileID: 2007600387}
   - component: {fileID: 2007600386}
-  - component: {fileID: 2007600385}
   - component: {fileID: 2007600388}
+  - component: {fileID: 2007600389}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Vehicle
@@ -5843,27 +5842,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 543450653412123448}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &2007600385
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007600383}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.1
-  m_Center: {x: 0.03561101, y: 0, z: 0}
 --- !u!23 &2007600386
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5944,6 +5922,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!65 &2007600389
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007600383}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.10339558, z: 2.8416736}
+  m_Center: {x: 0, y: -0.08481397, z: 0.16962767}
 --- !u!1 &2093908806
 GameObject:
   m_ObjectHideFlags: 0
