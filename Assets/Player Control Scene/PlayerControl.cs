@@ -44,8 +44,16 @@ public class PlayerControl : MonoBehaviour
         // Calculate the movement direction based on camera orientation
         Vector3 movement = (forward * direction.y + right * direction.x) * moveSpeed * Time.deltaTime;
 
-        // Apply the movement
-        transform.position += movement;
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.MovePosition(transform.position + movement);
+        }
+        else
+        {
+            transform.position += movement;
+        }
+
     }
 
     void rotatePlayer()

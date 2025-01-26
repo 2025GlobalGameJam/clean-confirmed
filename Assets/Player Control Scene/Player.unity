@@ -712,7 +712,7 @@ MonoBehaviour:
   TargetOffset: {x: 0, y: 0, z: -1}
   TrackerSettings:
     BindingMode: 0
-    PositionDamping: {x: 1, y: 1, z: 1}
+    PositionDamping: {x: 0, y: 0, z: 0}
     AngularDampingMode: 0
     RotationDamping: {x: 0, y: 0, z: 0}
     QuaternionDamping: 1
