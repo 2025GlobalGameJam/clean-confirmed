@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Net.Security;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,9 +10,12 @@ public class GameTimer : MonoBehaviour
     public TMP_Text TimerText;
     public bool isTimeOut = false;
 
+    public ScoreFinal s;
+
     void Start()
     {
         StartCoroutine(StartTimer());
+        s = FindFirstObjectByType<ScoreFinal>();
     }
 
     IEnumerator StartTimer()
@@ -60,8 +64,9 @@ public class GameTimer : MonoBehaviour
         {
             player.enabled = false;
         }
-
+        TimerText.text = $"Score{s.score}";
         // Freezing the game (but not adjusting the timeScale so that the UI works)
         Time.timeScale = 0f;
+
     }
 }
